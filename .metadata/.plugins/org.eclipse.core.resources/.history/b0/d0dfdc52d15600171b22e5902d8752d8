@@ -1,0 +1,21 @@
+
+public class Q5 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(oneWay("hell", "hell"));
+	}
+	public static boolean oneWay(String a, String b){
+		if (a.equals(b))
+			return true;
+		
+		int differences = 0;
+		
+		for (int i = 0; i < a.length() && i < b.length(); i++){
+			if (a.charAt(i) != b.charAt(i)){
+				differences++;
+			}
+		}
+		return differences <= 1; 
+	}
+}

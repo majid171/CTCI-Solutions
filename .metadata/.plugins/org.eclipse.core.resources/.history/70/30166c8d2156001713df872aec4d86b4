@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class Q2 {
+	public static void main(String args[]){
+		System.out.println(check("ABC", "ACB"));
+	}
+
+	public static boolean check(String a, String b){
+		
+		char tempa[] = a.toCharArray();
+		char tempb[] = b.toCharArray();
+		
+		java.util.Arrays.sort(tempa);
+		java.util.Arrays.sort(tempb);
+		System.out.println(tempa[0]);
+		return tempa.equals(tempb);
+	}
+}

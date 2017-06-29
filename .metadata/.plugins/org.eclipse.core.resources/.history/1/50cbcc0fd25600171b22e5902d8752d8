@@ -1,0 +1,30 @@
+/*
+  Q5 : Check if two strings are one edit or zero edits away from being the same string.
+ */
+
+
+public class Q5 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(oneWay("majid", "majida"));
+	}
+	public static boolean oneWay(String a, String b){
+		if (a.equals(b))
+			return true;
+		
+		int differences = 0;
+		int length = Math.abs(a.length() - b.length());
+		
+		if (length > 1)
+			return false;
+		
+		
+		for (int i = 0; i < a.length() && i < b.length(); i++){
+			if (a.charAt(i) != b.charAt(i)){
+				differences++;
+			}
+		}
+		return differences <= 1; 
+	}
+}

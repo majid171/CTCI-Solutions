@@ -1,0 +1,20 @@
+/*
+ Q3 : Write a method to replace all spaces in a string with '%20'. You may assume that you are given the "real" size of the string
+ */
+public class Q3 {
+	public static void main(String args[]){
+		System.out.println("Hello majid");
+		char[] array = new char[100];
+	}
+
+	public static char[] replace(char[] str, int len){
+		for (int i = 0; i < len; i++){
+			if (str[i].equals(" ")){
+				str[i] = "%20".toCharArray();
+			}
+		}
+		
+		
+		return str;
+	}
+}

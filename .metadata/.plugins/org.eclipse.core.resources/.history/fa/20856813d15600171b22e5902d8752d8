@@ -1,0 +1,12 @@
+
+public class Q5 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(oneWay("hello", "hell"));
+	}
+	public static boolean oneWay(String a, String b){
+		if (a.equals(b))
+			return true;
+	}
+}

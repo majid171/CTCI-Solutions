@@ -1,0 +1,22 @@
+import java.util.Arrays;
+
+public class Q2 {
+	public static void main(String args[]){
+		System.out.println(check("ABC", "ACB"));
+	}
+
+	public static boolean check(String a, String b){
+		
+		char tempa[] = a.toCharArray();
+		char tempb[] = b.toCharArray();
+		
+		java.util.Arrays.sort(tempa);
+		java.util.Arrays.sort(tempb);
+		
+		for (int i = 0; i < 3; i++){
+			System.out.println(tempa[i] + "" +  tempb[i]);
+		}
+		
+		return tempa.equals(tempb);
+	}
+}
